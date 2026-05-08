@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Support — PillLog</title>
+  <meta name="description" content="Support page for PillLog.">
+  
+<style>
+  :root {
+    --bg: #fbfaf7;
+    --text: #1f2933;
+    --muted: #667085;
+    --card: #ffffff;
+    --accent: #6d7dfc;
+    --accent-soft: #eef0ff;
+    --border: #e5e7eb;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+
+  main {
+    width: min(880px, calc(100% - 32px));
+    margin: 0 auto;
+    padding: 48px 0;
+  }
+
+  nav {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 56px;
+  }
+
+  a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  a:hover { text-decoration: underline; }
+
+  h1 {
+    font-size: clamp(40px, 7vw, 72px);
+    line-height: 1;
+    margin: 0 0 16px;
+    letter-spacing: -0.05em;
+  }
+
+  h2 {
+    font-size: 28px;
+    margin-top: 48px;
+    letter-spacing: -0.03em;
+  }
+
+  h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  p {
+    font-size: 18px;
+    color: var(--muted);
+  }
+
+  .hero {
+    padding: 56px;
+    border-radius: 32px;
+    background: linear-gradient(135deg, #ffffff 0%, #eef0ff 100%);
+    border: 1px solid var(--border);
+    box-shadow: 0 20px 60px rgba(31, 41, 51, 0.06);
+  }
+
+  .subtitle {
+    font-size: 24px;
+    max-width: 640px;
+    margin-bottom: 28px;
+  }
+
+  .badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 24px 0;
+  }
+
+  .badge {
+    padding: 8px 12px;
+    border-radius: 999px;
+    background: var(--accent-soft);
+    color: var(--accent);
+    font-weight: 700;
+    font-size: 14px;
+  }
+
+  .buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 28px;
+  }
+
+  .button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    padding: 12px 18px;
+    background: var(--accent);
+    color: white;
+    font-weight: 700;
+  }
+
+  .button.secondary {
+    background: white;
+    color: var(--accent);
+    border: 1px solid var(--border);
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    margin-top: 24px;
+  }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 24px;
+    padding: 24px;
+  }
+
+  ul {
+    padding-left: 22px;
+    color: var(--muted);
+    font-size: 17px;
+  }
+
+  footer {
+    border-top: 1px solid var(--border);
+    margin-top: 56px;
+    padding-top: 24px;
+    color: var(--muted);
+    font-size: 14px;
+  }
+
+  @media (max-width: 640px) {
+    main { padding: 24px 0; }
+    .hero { padding: 32px 24px; }
+  }
+</style>
+
+</head>
+<body>
+  <main>
+    <nav>
+      <a href="index.html">Marketing</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms</a>
+    </nav>
+
+    <h1>Support</h1>
+    <p>PillLog</p>
+
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:aleksandrudenisevich@gmail.com">aleksandrudenisevich@gmail.com</a></p>
+    <p>Please include the details below so we can help faster.</p>
+
+    <h2>What to include in your message</h2>
+    <ul>
+      <li>App name: PillLog</li>
+      <li>App version, for example 1.0.0</li>
+      <li>Device model, for example iPhone 15 Pro</li>
+      <li>iOS version</li>
+      <li>What happened and steps to reproduce</li>
+      <li>Screenshots or a short screen recording, if possible</li>
+    </ul>
+
+    <h2>Quick troubleshooting</h2>
+    <ul>
+      <li>Restart the app.</li>
+      <li>Restart your iPhone.</li>
+      <li>Make sure you are using the latest app version from the App Store.</li>
+      <li>Check that notifications are allowed in iOS Settings if reminders are not appearing.</li>
+      <li>If Face ID or Touch ID is unavailable, check that biometric authentication is enabled on your device.</li>
+    </ul>
+
+    <h2>FAQ</h2>
+
+    <section class="card">
+      <h3>Is an account required?</h3>
+      <p>No. PillLog works without sign-in.</p>
+    </section>
+
+    <section class="card">
+      <h3>Where is my data stored?</h3>
+      <p>Your medication records are stored locally on your device.</p>
+    </section>
+
+    <section class="card">
+      <h3>Does PillLog provide medical advice?</h3>
+      <p>No. PillLog is only a personal medication intake journal and reminder app. Always consult your doctor for medical decisions.</p>
+    </section>
+
+    <section class="card">
+      <h3>Why am I not receiving reminders?</h3>
+      <p>Make sure notifications are enabled for PillLog in iOS Settings and that reminders are enabled for the medicine inside the app.</p>
+    </section>
+
+    <h2>Legal</h2>
+    <p>Privacy Policy: <a href="privacy.html">privacy.html</a></p>
+    <p>Terms of Service: <a href="terms.html">terms.html</a></p>
+
+    <footer>
+      <p>© PillLog</p>
+      <p><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms</a> · <a href="index.html">Marketing</a></p>
+    </footer>
+  </main>
+</body>
+</html>

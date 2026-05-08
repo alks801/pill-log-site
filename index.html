@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PillLog — Medication tracker & reminders</title>
+  <meta name="description" content="PillLog is a simple and private medication tracker with one-tap intake logging, reminders, daily progress, and local-only storage.">
+  
+<style>
+  :root {
+    --bg: #fbfaf7;
+    --text: #1f2933;
+    --muted: #667085;
+    --card: #ffffff;
+    --accent: #6d7dfc;
+    --accent-soft: #eef0ff;
+    --border: #e5e7eb;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+
+  main {
+    width: min(880px, calc(100% - 32px));
+    margin: 0 auto;
+    padding: 48px 0;
+  }
+
+  nav {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 56px;
+  }
+
+  a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  a:hover { text-decoration: underline; }
+
+  h1 {
+    font-size: clamp(40px, 7vw, 72px);
+    line-height: 1;
+    margin: 0 0 16px;
+    letter-spacing: -0.05em;
+  }
+
+  h2 {
+    font-size: 28px;
+    margin-top: 48px;
+    letter-spacing: -0.03em;
+  }
+
+  h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  p {
+    font-size: 18px;
+    color: var(--muted);
+  }
+
+  .hero {
+    padding: 56px;
+    border-radius: 32px;
+    background: linear-gradient(135deg, #ffffff 0%, #eef0ff 100%);
+    border: 1px solid var(--border);
+    box-shadow: 0 20px 60px rgba(31, 41, 51, 0.06);
+  }
+
+  .subtitle {
+    font-size: 24px;
+    max-width: 640px;
+    margin-bottom: 28px;
+  }
+
+  .badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 24px 0;
+  }
+
+  .badge {
+    padding: 8px 12px;
+    border-radius: 999px;
+    background: var(--accent-soft);
+    color: var(--accent);
+    font-weight: 700;
+    font-size: 14px;
+  }
+
+  .buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 28px;
+  }
+
+  .button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    padding: 12px 18px;
+    background: var(--accent);
+    color: white;
+    font-weight: 700;
+  }
+
+  .button.secondary {
+    background: white;
+    color: var(--accent);
+    border: 1px solid var(--border);
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    margin-top: 24px;
+  }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 24px;
+    padding: 24px;
+  }
+
+  ul {
+    padding-left: 22px;
+    color: var(--muted);
+    font-size: 17px;
+  }
+
+  footer {
+    border-top: 1px solid var(--border);
+    margin-top: 56px;
+    padding-top: 24px;
+    color: var(--muted);
+    font-size: 14px;
+  }
+
+  @media (max-width: 640px) {
+    main { padding: 24px 0; }
+    .hero { padding: 32px 24px; }
+  }
+</style>
+
+</head>
+<body>
+  <main>
+    <nav>
+      <a href="index.html">Marketing</a>
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms</a>
+    </nav>
+
+    <section class="hero">
+      <h1>PillLog</h1>
+      <p class="subtitle">Medication tracker & reminders — log every intake with one tap and keep your routine clear.</p>
+
+      <div class="badges">
+        <span class="badge">Simple</span>
+        <span class="badge">Private</span>
+        <span class="badge">Local-only</span>
+        <span class="badge">No account</span>
+      </div>
+
+      <p>A clean medication journal that helps you remember whether you have taken your pills, vitamins, or supplements — without accounts, registration, or cloud sync.</p>
+
+      <div class="buttons">
+        <a class="button" href="#">Download on the App Store</a>
+        <a class="button secondary" href="support.html">Support</a>
+      </div>
+    </section>
+
+    <h2>One tap. Clear history. Less guessing.</h2>
+
+    <div class="grid">
+      <section class="card">
+        <h3>One-tap intake log</h3>
+        <p>Open the app, tap your medicine, and the intake record is saved instantly.</p>
+      </section>
+
+      <section class="card">
+        <h3>Flexible schedules</h3>
+        <p>Add medicines with daily intake times and see what is planned for today.</p>
+      </section>
+
+      <section class="card">
+        <h3>Daily progress</h3>
+        <p>Quickly check how many intakes are scheduled, completed, and still remaining.</p>
+      </section>
+
+      <section class="card">
+        <h3>Reminders</h3>
+        <p>Set local reminders so you are notified when it is time to take your medication.</p>
+      </section>
+
+      <section class="card">
+        <h3>History</h3>
+        <p>Review previous intake records and notes whenever you need them.</p>
+      </section>
+
+      <section class="card">
+        <h3>Privacy-first</h3>
+        <p>No account required. Your data is stored locally on your device.</p>
+      </section>
+    </div>
+
+    <h2>Built for everyday routines</h2>
+    <ul>
+      <li>Daily medication</li>
+      <li>Treatment courses</li>
+      <li>Vitamins and supplements</li>
+      <li>Helping loved ones stay on schedule</li>
+    </ul>
+
+    <h2>Important disclaimer</h2>
+    <p>PillLog is not a medical app and does not provide medical advice, diagnosis, or treatment recommendations. It is intended only for personal intake logging. Always consult a qualified healthcare professional for medical decisions.</p>
+
+    <footer>
+      <p>Questions? Email us at <a href="mailto:aleksandrudenisevich@gmail.com">aleksandrudenisevich@gmail.com</a></p>
+      <p>© PillLog. All rights reserved.</p>
+      <p><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a> · <a href="support.html">Support</a></p>
+    </footer>
+  </main>
+</body>
+</html>
